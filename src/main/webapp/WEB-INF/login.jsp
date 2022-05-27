@@ -20,10 +20,10 @@
 <font color="red">${errorMessage}</font>
 
 	<form method="post" action="userlogin">
-		Name : <input type="text" name="name" class="form-control col-sm-3"/>
+		Name : <input type="text" name="email" class="form-control col-sm-3"/>
 		Password : <input type="password" name="password"  class="form-control col-sm-3 mb-3"/> 
 		
-		<input type="submit" class="btn btn-primary" /><a href="register">Register</a>	</form>
+		<input type="submit" class="btn btn-primary" /><a href="register"> Admin Register</a>	</form>
 	</div></div>
 	</div>
 	</div>

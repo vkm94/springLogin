@@ -10,16 +10,18 @@
 <title>Insert title here</title>
 </head>
 <body>
+
 <div class="container d-flex justify-content-center">
 <div class="card col-sm-5">
 <div class="card-header">
-<h5>Register</h5>
+<h5>Login</h5>
 </div>
-
+<c:forEach items="${result}" var="data2">	
+</c:forEach>
 <div class="card-body">
 <font color="red">${errorMessage}</font>
 
-	<form method="post" action="add_admin" >
+	<form method="post" action="add_user" >
 		Name : <input type="text" name="name" class="form-control col-sm-3" required/>
 		Email : <input type="email" name="email"  class="form-control col-sm-3 mb-3" required/> 
 		
@@ -29,9 +31,9 @@
 		
 		
 		Phone number : <input type="text" name="contact" class="form-control col-sm-3" required/>
-		
+		Admin id : <input type="text" name="admin_id"  class="form-control col-sm-3 mb-3" required/>
 		<input type="submit" class="btn btn-primary" />
-		<a href="login">Login</a>
+		<a href="login">Add</a>
 	</form>
 	</div></div>
 	</div>
